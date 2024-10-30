@@ -1,0 +1,9 @@
+.footer {
+    background-color: #f1f1f1; /* Footer background color */
+    text-align: center; /* Center text */
+    padding: 10px; /* Padding for footer */
+    position: relative; /* Position relative for layout */
+    bottom: 0; /* Position at the bottom */
+    width: 100%; /* Full width */
+    box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}

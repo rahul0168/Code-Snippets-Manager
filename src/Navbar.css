@@ -1,0 +1,35 @@
+.navbar {
+    background-color: #0c4ea2; /* Navbar background color */
+    padding: 15px; /* Padding for navbar */
+    color: white; /* Text color */
+    display: flex; /* Flexbox for layout */
+    justify-content: space-between; /* Space between brand and links */
+    align-items: center; /* Center items vertically */
+}
+.navbar-brand{
+    font-size: 3rem;
+}
+
+.navbar-links {
+    list-style: none; /* Remove bullet points */
+    display: flex; /* Flexbox for links */
+    gap: 20px; /* Space between links */
+}
+
+.navbar-links li a {
+    color: white; /* Link text color */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s; /* Transition for hover effect */
+}
+
+.navbar-links li a:hover {
+    color: #ffd700; /* Change color on hover */
+}
+
+.d-none{
+    display: none; 
+}
+
+.w-100{
+    width: 100%;
+}

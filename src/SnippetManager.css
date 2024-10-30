@@ -1,0 +1,145 @@
+/* SnippetManager.css */
+.snippet-manager {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border 0.3s;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+    border-color: #0c4ea2;
+    outline: none;
+}
+
+button {
+    background-color: #0c4ea2;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #005f8d;
+}
+
+h2 {
+    margin-top: 20px;
+    color: #333;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background: #000000;
+    border: 1px solid #ddd;
+    border-radius: 11px;
+    padding: 15px;
+    margin: 10px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    color: #ffffff;
+}
+
+pre {
+    background-color: #f5f5f5;
+    padding: 10px;
+    border-radius: 4px;
+    overflow-x: auto;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+.snippet-page {
+    padding: 20px; /* Padding for the main page */
+}
+
+.search-input {
+    width: 100%; /* Full width for the search input */
+    padding: 10px; /* Padding for input */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+    margin-bottom: 20px; /* Space below the search input */
+    font-size: 1em; /* Font size for input */
+}
+
+.snippet-container {
+    display: flex; /* Use flexbox for layout */
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    gap: 20px; /* Space between items */
+}
+
+.snippet-item {
+    flex: 1 1 calc(48% - 20px); /* Take up to 50% of the width minus gap */
+    background-color: #f9f9f9; /* Light background for snippets */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 15px; /* Padding for inner content */
+    transition: box-shadow 0.3s ease; /* Transition for hover effect */
+}
+
+.snippet-item:hover {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Shadow effect on hover */
+}
+
+.snippet-title {
+    font-size: 1.5em; /* Larger font for titles */
+    margin: 0; /* Remove default margin */
+}
+
+.snippet-code {
+    background-color: #282c34; /* Dark background for code */
+    color: #f8f8f2; /* Light color for text */
+    padding: 10px; /* Padding for code block */
+    border-radius: 5px; /* Rounded corners for code block */
+    overflow: auto; /* Scroll for long code snippets */
+    white-space: pre-wrap; /* Handle long lines */
+}
+
+.delete-button {
+    background-color: #e74c3c; /* Red color for delete button */
+    color: white; /* White text */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 8px 12px; /* Padding for button */
+    cursor: pointer; /* Pointer cursor */
+    transition: background-color 0.3s ease; /* Transition for hover effect */
+    margin-top: 10px; /* Space above button */
+}
+
+.delete-button:hover {
+    background-color: #c0392b; /* Darker red on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .snippet-item {
+        flex: 1 1 calc(100% - 20px); /* Stack items on small screens */
+    }
+}
+
